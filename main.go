@@ -15,7 +15,7 @@ func main() {
 	case "tcp":
 		tcp()
 	case "udp":
-		panic("udp not implemented")
+		udp()
 	default:
 		log.Fatalf("unknown protocol: %v\n", *protocol)
 	}

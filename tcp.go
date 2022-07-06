@@ -74,6 +74,7 @@ func handleConn(conn net.Conn) {
 }
 
 func tcp() {
+	// can also use net.ListenTCP
 	listener, err := net.Listen("tcp", ":8080")
 	if err != nil {
 		log.Fatalf("listen error: %v", err)
